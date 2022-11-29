@@ -1,0 +1,12 @@
+@import "../../../public/styles/common.module.scss";
+ 
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  section{
+    width: 100%;
+    padding: 1vh;
+  }
+}

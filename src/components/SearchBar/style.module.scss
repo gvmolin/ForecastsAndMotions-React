@@ -1,0 +1,20 @@
+@import "../../../public/styles/vars.scss";
+@import "../../../public/styles/common.module.scss";
+
+.container {
+  padding: 0.5vh;
+  height: 10vw;
+  display: flex;
+  justify-content:space-between;
+
+  input{
+    height: 80%;
+    width: 100%;
+    border: none;
+  }
+
+  button{
+    background-color: transparent;
+    border: none;
+  }
+}

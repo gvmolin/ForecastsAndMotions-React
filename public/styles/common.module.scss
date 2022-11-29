@@ -1,0 +1,8 @@
+@import "./vars.scss";
+
+.defaultBorders{
+  border: black $default-thin-border;
+  border-bottom: black $default-thick-border;
+  border-right: black $default-thick-border;
+  border-radius: $default-border-radius;
+}
