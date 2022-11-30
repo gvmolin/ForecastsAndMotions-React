@@ -1,7 +1,11 @@
 @import "../public/styles/vars.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 html {
   padding: 0;
   margin: 0;
-  width: 100vw;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,input{
+  font-family: 'PT Sans', sans-serif;
 }
