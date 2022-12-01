@@ -14,13 +14,16 @@ export default function SearchBar (props:Iprops):React.ReactElement {
 
   async function onChangeSearch(e:React.ChangeEvent<HTMLInputElement>):Promise<void>{
     setSearch(e.currentTarget.value);
+  }
+
+  async function onSearch(){
     await axios.get(`https://geocoding-api.open-meteo.com/v1/search?name=${search}`)
       .then(res => setLocations(res.data.results));
   }
 
-  // useEffect(()=>{
-  //   console.log(locations);
-  // },[locations]);
+  useEffect(()=>{
+    onSearch();
+  },[search]);
 
   return(
     <>
