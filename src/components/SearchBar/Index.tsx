@@ -1,10 +1,14 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import style from "./style.module.scss";
 import axios from "axios";
+import { Iquery } from "../../utils/common/interfaces";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function SearchBar ():React.ReactElement {
+interface Iprops {
+  onSelect: React.Dispatch<Iquery>
+}
 
+export default function SearchBar (props:Iprops):React.ReactElement {
   const [search, setSearch] = useState("");
   const [locations, setLocations] = useState<any[]>([]);
 
@@ -14,15 +18,9 @@ export default function SearchBar ():React.ReactElement {
       .then(res => setLocations(res.data.results));
   }
 
-  function onSearch():void {
-    console.log(search);
-    
-    
-  }
-
-  useEffect(()=>{
-    console.log(locations);
-  }, [locations]);
+  // useEffect(()=>{
+  //   console.log(locations);
+  // },[locations]);
 
   return(
     <>
@@ -33,15 +31,27 @@ export default function SearchBar ():React.ReactElement {
       `}
       >
         <input type="text" value={search} onChange={onChangeSearch} />
-        <button><FontAwesomeIcon icon="magnifying-glass" onClick={onSearch} /></button>
+        <button><FontAwesomeIcon icon="magnifying-glass"/></button>
       </div>
 
       { 
         (locations != undefined && locations.length) ?
-          <div>
+          <div className={style.resultContainer}>
             <ul>
               {
-                locations.map((location, i) => i < 3 && <li key={location.id}><a href={`?lat=${location.latitude}&lon=${location.longitude}`}>{location.name}</a></li>)
+                locations.map((location, i) => i < 3 && 
+                  <li key={location.id} className={style.defaultBorders}>
+                    <button onClick={() => props.onSelect({
+                      lat:location.latitude, 
+                      lon: location.longitude,
+                      name: location.name,
+                      country: location.country,
+                      admin_area:location.admin1
+                    })}> 
+                      {location.name} 
+                    </button>
+                  </li>
+                )
               }
             </ul>
           </div> : 
