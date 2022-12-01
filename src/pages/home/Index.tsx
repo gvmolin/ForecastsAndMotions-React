@@ -5,6 +5,7 @@ import { ForecastField } from "../../components/ForecastField/Index";
 import axios from "axios";
 import { INITIAL_QUERY, Iquery } from "../../utils/common/interfaces";
 import { useEffect, useState } from "react";
+import ChartContainer from "../../components/ChartContainer/Index";
 
 export function Home():React.ReactElement {
   //-------------------> DATA
@@ -42,6 +43,7 @@ export function Home():React.ReactElement {
         <h4 style={{marginTop:0}}>{atualDate()}</h4>
         <SearchBar onSelect={setQuery} />
         <ForecastField location={query} weather={data} />
+        <ChartContainer />
       </div>
       
     </Template>
