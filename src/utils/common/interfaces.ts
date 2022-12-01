@@ -16,6 +16,8 @@ export const INITIAL_QUERY = {
 
 export const INITIAL_CODE = {
   code:0, 
-  description:""
+  description:"",
+  dayIcon:"magnifying-glass",
+  nightIcon:"magnifying-glass",
 };
 

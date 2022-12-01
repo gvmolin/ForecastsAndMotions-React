@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { INITIAL_CODE, Iquery } from "../../utils/common/interfaces";
 import weatherCodes from "../../utils/weatherCodes.json";
 import { useEffect, useState } from "react";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export function ForecastField(props:{location:Iquery, weather:any}):React.ReactElement {
 
@@ -34,7 +35,7 @@ export function ForecastField(props:{location:Iquery, weather:any}):React.ReactE
       `}>
       <h2>{props.location.name} - {props.location.admin_area}</h2>
       <h3>{props.location.country}</h3>
-      <h1><FontAwesomeIcon icon="cloud" /></h1>
+      <h1><FontAwesomeIcon icon={currentCode.dayIcon as IconProp} /></h1>
       <h1 className={style.temperature}>{props.weather && props.weather.data?.current_weather.temperature}°C</h1>
 
       <h3>{currentCode.description}</h3>

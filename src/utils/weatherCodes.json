@@ -1,114 +1,170 @@
 [
   {
     "code":0,
-    "description":"Clear sky"
+    "description":"Clear sky",
+    "dayIcon":"sun",
+    "nightIcon":"moon"
   },
   {
     "code":1,
-    "description":"Mainly clear"
+    "description":"Mainly clear",
+    "dayIcon":"sun",
+    "nightIcon":"moon"
   },
   {
     "code":2,
-    "description":"Partly cloudy"
+    "description":"Partly cloudy",
+    "dayIcon":"cloud-sun",
+    "nightIcon":"cloud-moon"
   },
   {
     "code":3,
-    "description":"Overcast"
+    "description":"Overcast",
+    "dayIcon":"cloud",
+    "nightIcon":"cloud"
   },
   {
     "code":45,
-    "description":"Fog"
+    "description":"Fog",
+    "dayIcon":"smog",
+    "nightIcon":"smog"
   },
   {
     "code":48,
-    "description":"Depositing rime fog"
+    "description":"Depositing rime fog",
+    "dayIcon":"smog",
+    "nightIcon":"smog"
   },
   {
     "code":51,
-    "description":"Drizzle: Light"
+    "description":"Drizzle: Light",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":53,
-    "description":"Drizzle: Moderate"
+    "description":"Drizzle: Moderate",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":55,
-    "description":"Drizzle: Dense"
+    "description":"Drizzle: Dense",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":56,
-    "description":"Freezing Drizzle: Light"
+    "description":"Freezing Drizzle: Light",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":57,
-    "description":"Freezing Drizzle: Dense"
+    "description":"Freezing Drizzle: Dense",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":61,
-    "description":"Rain: Slight"
+    "description":"Rain: Slight",
+    "dayIcon":"cloud-sun-rain",
+    "nightIcon":"cloud-moon-rain"
   },
   {
     "code":63,
-    "description":"Rain: Moderate"
+    "description":"Rain: Moderate",
+    "dayIcon":"cloud-sun-rain",
+    "nightIcon":"cloud-moon-rain"
   },
   {
     "code":65,
-    "description":"Rain: Heavy"
+    "description":"Rain: Heavy",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":66,
-    "description":"Freezing Rain: Light"
+    "description":"Freezing Rain: Light",
+    "dayIcon":"cloud-rain",
+    "nightIcon":"cloud-rain"
   },
   {
     "code":67,
-    "description":"Freezing Rain: Heavy"
+    "description":"Freezing Rain: Heavy",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":71,
-    "description":"Snow fall: Slight"
+    "description":"Snow fall: Slight",
+    "dayIcon":"snowflake",
+    "nightIcon":"snowflake"
   },
   {
     "code":73,
-    "description":"Snow fall: Moderate"
+    "description":"Snow fall: Moderate",
+    "dayIcon":"snowflake",
+    "nightIcon":"snowflake"
   },
   {
     "code":75,
-    "description":"Snow fall: Heavy"
+    "description":"Snow fall: Heavy",
+    "dayIcon":"snowflake",
+    "nightIcon":"snowflake"
   },
   {
     "code":77,
-    "description":"Snow grains"
+    "description":"Snow grains",
+    "dayIcon":"snowflake",
+    "nightIcon":"snowflake"
   },
   {
     "code":80,
-    "description":"Rain showers: Slight"
+    "description":"Rain showers: Slight",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":81,
-    "description":"Rain showers: Moderate"
+    "description":"Rain showers: Moderate",
+    "dayIcon":"cloud-showers-heavy",
+    "nightIcon":"cloud-showers-heavy"
   },
   {
     "code":82,
-    "description":"Rain showers: Violent"
+    "description":"Rain showers: Violent",
+    "dayIcon":"cloud-showers-water",
+    "nightIcon":"cloud-showers-water"
   },
   {
     "code":85,
-    "description":"Snow showers: Slight"
+    "description":"Snow showers: Slight",
+    "dayIcon":"cloud-meatball",
+    "nightIcon":"cloud-meatball"
   },
   {
     "code":86,
-    "description":"Snow showers: Heavy"
+    "description":"Snow showers: Heavy",
+    "dayIcon":"cloud-meatball",
+    "nightIcon":"cloud-meatball"
   },
   {
     "code":95,
-    "description":"Thunderstorm: Slight or moderate"
+    "description":"Thunderstorm: Slight or moderate",
+    "dayIcon":"cloud-bolt",
+    "nightIcon":"cloud-bolt"
   },
   {
     "code":96,
-    "description":"Thunderstorm with slight hail"
+    "description":"Thunderstorm with slight hail",
+    "dayIcon":"cloud-bolt",
+    "nightIcon":"cloud-bolt"
   },
   {
     "code":99,
-    "description":"Thunderstorm with heavy hail"
+    "description":"Thunderstorm with heavy hail",
+    "dayIcon":"cloud-bolt",
+    "nightIcon":"cloud-bolt"
   }
 ]

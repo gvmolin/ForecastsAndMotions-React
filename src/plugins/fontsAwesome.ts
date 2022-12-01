@@ -1,3 +1,2 @@
-import { faMagnifyingGlass, faCloud } from "@fortawesome/free-solid-svg-icons";
-
-export const icons = [faMagnifyingGlass,faCloud];
+import { faMagnifyingGlass, faSun, faCloud, faCloudSun, faCloudMoon, faSmog, faCloudShowersHeavy, faSnowflake, faCloudMeatball, faCloudShowersWater, faCloudMoonRain, faCloudBolt} from "@fortawesome/free-solid-svg-icons";
+export const icons = [faSun, faMagnifyingGlass, faCloud, faCloudSun, faCloudMoon, faSmog, faCloudShowersHeavy, faSnowflake, faCloudMeatball, faCloudShowersWater, faCloudMoonRain, faCloudBolt];
