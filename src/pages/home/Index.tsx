@@ -31,9 +31,9 @@ export function Home():React.ReactElement {
     getWeather(query);
   }, [query]);
 
-  // useEffect(()=>{
-  //   console.log(data);
-  // }, [data]);
+  useEffect(()=>{
+    console.log(data);
+  }, [data]);
 
   //-------------------> TEMPLATE
   return (
@@ -43,7 +43,7 @@ export function Home():React.ReactElement {
         <h4 style={{marginTop:0}}>{atualDate()}</h4>
         <SearchBar onSelect={setQuery} />
         <ForecastField location={query} weather={data} />
-        <ChartContainer />
+        <ChartContainer chartData={data} />
       </div>
       
     </Template>
